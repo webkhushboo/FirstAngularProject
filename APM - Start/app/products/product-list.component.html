@@ -24,11 +24,11 @@
     </thead>
 
     <tbody><tr *ngFor='let product of productArray'>
-        <td><img [src]='product.imageUrl' [title]='productTitle' [width]='imageWidth'/></td>
+        <td><img [src]='product.imageUrl' [title]='productTitle' [style.width.px]='imageWidth'/></td>
         <td> {{product.productName}}</td>
-        <td> {{product.productCode}}</td>
+        <td> {{product.productCode | lowercase}}</td>
         <td> {{product.releaseDate}}</td>
-        <td> {{product.price}}</td>
+        <td> {{product.price | currency : 'USD':true :'1.2-2'}}</td>
         <td> {{product.starRating}}</td>
         </tr></tbody>
 </table>
