@@ -3,8 +3,9 @@ import {IProduct} from './product';
 
 @Component({ // This is the component decorator that defines the metadata
     selector :'pm-products', 
-    templateUrl:'app/products/product-list.component.html', // here we provide the path for the template and it should be relative to index.html
-    styleUrls :['app/products/product-list.component.css']
+    moduleId : module.id,
+    templateUrl:'product-list.component.html', // here we provide the path for the template and it should be relative to index.html
+    styleUrls :['product-list.component.css']
 })
 
 export class ProductListComponent implements OnInit{
