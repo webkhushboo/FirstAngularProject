@@ -3,8 +3,7 @@ import {IProduct} from './product';
 import {ProductService} from './product.service';
 
 @Component({ // This is the component decorator that defines the metadata
-    selector :'pm-products', 
-    moduleId : module.id,
+     moduleId : module.id,
     templateUrl:'product-list.component.html', // here we provide the path for the template and it should be relative to index.html
     styleUrls :['product-list.component.css']
 })
